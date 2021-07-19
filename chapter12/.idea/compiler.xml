@@ -6,15 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chapter1" />
-        <module name="eureka-server" />
         <module name="service-hi" />
+        <module name="eureka-server" />
+        <module name="chapter1" />
+        <module name="service-hi3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chapter1" target="1.5" />
       <module name="eureka-server" target="1.8" />
       <module name="service-hi" target="1.8" />
+      <module name="service-hi3" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="service-hi3" options="" />
+    </option>
   </component>
 </project>
